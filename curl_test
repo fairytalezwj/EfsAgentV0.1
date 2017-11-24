@@ -1,0 +1,7 @@
+
+
+#get
+curl -i -H "Content-Type:application/json" -X GET -d '{"Authentication":{"Account":"zwj","Password":"kaiji"}}' http://192.168.32.53:80/status
+
+#post
+curl -i -H "Content-Type:application/json" -X POST -d '{"Authentication":{"Account":"zwj","Password":"kaiji"},"Data":{"ServerName":"nfs","InfName":"eth0","Addr":"192.158","MacAddr":"101010"}}' http://192.168.32.53:80/efserver/interfaces/:name1
